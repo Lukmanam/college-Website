@@ -5,6 +5,8 @@ import { LiaDonateSolid } from "react-icons/lia";
 import { FaBuildingColumns } from "react-icons/fa6";
 import { SiGoogleclassroom } from "react-icons/si";
 import { IoMdBookmarks } from "react-icons/io";
+import { Carousel } from "flowbite-react";
+
 
 const HomeContent = () => {
   return (
@@ -28,6 +30,7 @@ const HomeContent = () => {
           </video>
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
+       
         {/* 
   <div className='bg-green-100 p-16 h-screen sm:h-auto'>
   <div className='cards w-3/4 h-36 rounded-xl mx-auto justify-evenly bg-white p-6 flex '>
@@ -87,8 +90,27 @@ const HomeContent = () => {
             </div>
           </div>
         </div>
+        <div className="carousel w-full">
+  <div id="item1" className="carousel-item w-full">
+    <img src="../src/assets/song1.jpg" className="w-full" />
+  </div> 
+  <div id="item2" className="carousel-item w-full">
+    <img src="../src/assets/magazinesayyid.jpg" className="w-full" />
+  </div> 
+  <div id="item3" className="carousel-item w-full">
+    <img src="../src/assets/sport.jpg" className="w-full" />
+  </div> 
+  {/* <div id="item4" className="carousel-item w-full">
+    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+  </div> */}
+</div> 
+<div className="flex justify-center w-full py-2 gap-2">
+  <a href="#item1" className="btn btn-xs">1</a> 
+  <a href="#item2" className="btn btn-xs">2</a> 
+  <a href="#item3" className="btn btn-xs">3</a> 
+  <a href="#item4" className="btn btn-xs">4</a>
+</div>
 
-        <div className="w-screen bg-green-50 h-screen"></div>
       </div>
     </div>
   );
