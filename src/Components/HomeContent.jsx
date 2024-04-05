@@ -24,7 +24,7 @@ const HomeContent = () => {
         <source src="../src/assets/homevideo.mp4" />
       </video> */}
         <div className="relative">
-          <video autoPlay muted loop className="w-screen ">
+          <video autoPlay muted loop className="w-screen -z-50">
             <source src="../src/assets/homevideo.mp4" />
             <div className=" inset-0 bg-black opacity-70"></div>
           </video>
