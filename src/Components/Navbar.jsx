@@ -26,7 +26,7 @@ const Navbar = () => {
     >
       <span className="sr-only">Open main menu</span>
       <svg
-        className="w-5 h-5"
+        className="w-10 h-10"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -41,8 +41,8 @@ const Navbar = () => {
         />
       </svg>
     </button>
-    <div className={`w-full md:block sm:block md:w-auto ${isdropdownOpen ?'block' :'hidden'}`}>
-      <ul className="flex z-1 flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white  dark:border-gray-700">
+    <div className={`w-screen  md:block  md:w-auto ${isdropdownOpen ?'block' :'hidden'} z-50`}>
+      <ul className="flex z-1 flex-col font-medium p-2 md:p-0  border border-gray-100 rounded-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
         <li>
           <a
             href="#"
