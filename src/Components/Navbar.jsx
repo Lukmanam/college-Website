@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isdropdownOpen,setisdropDownOpen]=useState(false)
@@ -43,6 +44,7 @@ const Navbar = () => {
     </button>
     <div className={`w-screen  md:block  md:w-auto ${isdropdownOpen ?'block' :'hidden'} z-50`}>
       <ul className="flex z-1 flex-col font-medium p-2 md:p-0  border border-gray-100 rounded-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+        <Link to={'/'}>
         <li>
           <a
             href="#"
@@ -52,6 +54,7 @@ const Navbar = () => {
             Home
           </a>
         </li>
+        </Link>
         <li>
           <a
             href="#"
