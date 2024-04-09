@@ -44,7 +44,8 @@ const Navbar = () => {
     </button>
     <div className={`w-screen  md:block  md:w-auto ${isdropdownOpen ?'block' :'hidden'} z-50`}>
       <ul className="flex z-1 flex-col font-medium p-2 md:p-0  border border-gray-100 rounded-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
-        <Link to={'/'}>
+        <Link to='/' className='block py-2 px-3 text-md text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+            aria-current="page"'>
         <li>
           <a
             href="#"
